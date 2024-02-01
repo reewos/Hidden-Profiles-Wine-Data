@@ -1,5 +1,4 @@
-# Hidden-Profiles-Wine-Data
-Data Science Challenge: Uncovering the Hidden Profiles in Wine Data
+# Data Science Challenge: Uncovering the Hidden Profiles in Wine Data
 
 ## Previous information
 
@@ -48,4 +47,30 @@ Figure 1. First 5 examples of dataset.
 Figure 2. Statistical summary of dataset.
 
 ![Correlation Matrix](./images/correlation_matrix.png)
-Figure 3. Correlation matrix of dataset
+Figure 3. Correlation matrix of dataset.
+
+![Distribution of feature](./images/distribution_feature.png)
+Figure 4. Distribution of dataset's features.
+
+The dataset's values have to be scaled for the clustering process. The standard scale was chosen. PCA was also used to be able to graph in 2 dimensions
+
+## Clustering Exploration
+
+### K-Means
+![Clusters Kmeans](./images/result_cluster/clusters_kmeans.png)
+
+### Agglomerative Hierarchical Clustering
+![Custers_agglomerative](./images/result_cluster/clusters_agglomerative.png)
+
+### DBSCAN
+![Clusters DBSCAN with PCA](./images/result_cluster/clusters_dbscan_pca.png)
+
+### AffinityPropagation
+![Clusters_ Affinity](./images/result_cluster/clusters_affinity.png)
+
+### Spectral Clustering
+![Clusters Spectral](./images/result_cluster/clusters_spectral.png)
+
+### Voting Classifier (Ensemble)
+![Clusters Voting ViolinPlot](./images/violinplot_voting_cluster.png)
+
