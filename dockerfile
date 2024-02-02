@@ -44,6 +44,14 @@ USER appuser
 # Copy the source code into the container.
 COPY . .
 
+# Create folders
+USER root
+RUN chown -R appuser: /app/models
+RUN chmod -R u+w /app/models
+RUN chown -R appuser: /app/datasets
+RUN chmod -R u+w /app/datasets
+USER appuser
+
 # Expose the port that the application listens on.
 EXPOSE 8000
 

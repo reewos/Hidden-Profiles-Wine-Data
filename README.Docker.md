@@ -1,22 +1,22 @@
-### Building and running your application
+### 1. Compose image and execute in background
+```
+docker compose up --build -d
+```
+or
+```
+docker pull reewos/hidden-profiles-wine-data-server
+docker run -d -p 8000:8000 --name hidden-profiles-wine-data-server-1 reewos/hidden-profiles-wine-data-server:latest
+```
+### 2. Run with terminal
+```
+docker exec -it hidden-profiles-wine-data-server-1 /bin/sh
+```
+### 3. Inside terminal, execute
+```
+python main.py
+```
 
-When you're ready, start your application by running:
-`docker compose up --build`.
+### 4. Results paths
 
-Your application will be available at http://localhost:8000.
-
-### Deploying your application to the cloud
-
-First, build your image, e.g.: `docker build -t myapp .`.
-If your cloud uses a different CPU architecture than your development
-machine (e.g., you are on a Mac M1 and your cloud provider is amd64),
-you'll want to build the image for that platform, e.g.:
-`docker build --platform=linux/amd64 -t myapp .`.
-
-Then, push it to your registry, e.g. `docker push myregistry.com/myapp`.
-
-Consult Docker's [getting started](https://docs.docker.com/go/get-started-sharing/)
-docs for more detail on building and pushing.
-
-### References
-* [Docker's Python guide](https://docs.docker.com/language/python/)
+* Path model: "/app/models/voting_model.pkl"
+* Path results: "/app/datasets/results.csv"

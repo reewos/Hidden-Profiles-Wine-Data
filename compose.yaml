@@ -11,6 +11,7 @@ services:
   server:
     build:
       context: .
+    image: reewos/hidden-profiles-wine-data-server:latest
     ports:
       - 8000:8000
 

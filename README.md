@@ -49,7 +49,7 @@ Figure 2. Statistical summary of dataset.
 ![Correlation Matrix](./images/correlation_matrix.png)
 Figure 3. Correlation matrix of dataset.
 
-![Distribution of feature](./images/distribution_feature.png)
+![Distribution of feature](./images/distribution_features.png)
 Figure 4. Distribution of dataset's features.
 
 The dataset's values have to be scaled for the clustering process. The standard scale was chosen. PCA was also used to be able to graph in 2 dimensions

@@ -1,4 +1,9 @@
 from flask import Flask, jsonify
+import warnings
+
+# Ignore all deprecation warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 import pandas as pd
 import os
 
@@ -22,4 +27,4 @@ def get_wine_data():
     return jsonify({"wine_data": wine_data_dict})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=80)
